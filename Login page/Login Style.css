@@ -19,11 +19,98 @@ form
 
 #X
 {
+    font-weight: bold;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(160, 0, 0);
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 7px;
+    margin-left: 260px;
+    border-radius: 0 7px 0 7px;
+}
 
+#X:hover
+{
+    background-color: rgb(136, 0, 0);
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#email
+{
+    color: aliceblue;
+    width: 70%;
+    height: 20px;
+    background: none;
+    border-color: black;
+    border-style: double;
+    border-width: 0 0 2px 0;
+}
+::placeholder
+{
+    color: aliceblue;
+    padding-left: 15px;
+}
+#password
+{
+    color: aliceblue;
+    width: 70%;
+    height: 20px;
+    background: none;
+    border-color: black;
+    border-style: double;
+    border-width: 0 0 2px 0;
+    margin-bottom: 2px;
 }
 
 h2
 {
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+}
+
+#forget, #login2, #Register2
+{
+    color: rgb(0, 30, 255);
+    background: none;
+    border: none;
+}
+
+#forget:hover
+{
+    text-decoration: underline;
+} 
+#login2:hover
+{
+    text-decoration: underline;
+} 
+#Register2:hover
+{
+    text-decoration: underline; 
+}
+
+#forget:active
+{
+    color: aliceblue;
+    text-decoration: underline;
+} 
+#login2:active
+{
+    color: aliceblue;
+    text-decoration: underline;
+} 
+#Register2:active
+{
+    color: aliceblue;
+    text-decoration: underline; 
+}
+#x:active
+{
+    background-color: rgb(233, 222, 222);
 }
