@@ -9,12 +9,16 @@ body
 
 form
 {
-    background-color: rgb(75, 75, 75);
+    background: linear-gradient(135deg, rgba(4, 1, 177, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     text-align: center;
     max-width: 300px;
     margin: auto;
     padding-bottom: 50px;
     border-radius: 10px;
+    border: #dbdbdb solid 1px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 0 18px 3px rgba(0, 0, 0, 0.3);
 }
 
 #X
@@ -25,19 +29,19 @@ form
     background-color: rgb(160, 0, 0);
     padding-top: 7px;
     padding-bottom: 6px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
     margin-top: 7px;
     margin-left: 260px;
     border-radius: 0 7px 0 7px;
 }
 
-#X:hover
+#X:hover, #login:hover
 {
     background-color: rgb(136, 0, 0);
 }
 
-button:hover
+button:hover,#Rememberme:hover
 {
     cursor: pointer;
 }
@@ -50,10 +54,11 @@ button:hover
     background: none;
     border-color: black;
     border-style: double;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 1px 0;
 }
 ::placeholder
 {
+    opacity: 50%;
     color: aliceblue;
     padding-left: 15px;
 }
@@ -65,7 +70,7 @@ button:hover
     background: none;
     border-color: black;
     border-style: double;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 1px 0;
     margin-bottom: 2px;
 }
 
@@ -75,41 +80,48 @@ h2
     color: aliceblue;
 }
 
-#forget, #login2, #Register2
+#forget, #Register2
 {
     color: rgb(0, 30, 255);
     background: none;
     border: none;
 }
-
-#forget:hover
+#login
 {
-    text-decoration: underline;
-} 
-#login2:hover
+    font-weight: bold;   
+    color: aliceblue;
+    background-color: rgb(180, 0, 0);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+#p2
 {
-    text-decoration: underline;
-} 
-#Register2:hover
+    color: #dbdbdb;
+    font-size: 12px;
+}
+#Remember
 {
-    text-decoration: underline; 
+    color: #dbdbdb;
+    font-size: 14px;
+}
+#Rememberme
+{
+    width: 11px;
 }
 
-#forget:active
+#forget:hover, #Register2:hover
+{
+    text-decoration: underline;
+} 
+
+#forget:active, #login:active, #Register2:active
 {
     color: aliceblue;
     text-decoration: underline;
 } 
-#login2:active
-{
-    color: aliceblue;
-    text-decoration: underline;
-} 
-#Register2:active
-{
-    color: aliceblue;
-    text-decoration: underline; 
-}
 #x:active
 {
     background-color: rgb(233, 222, 222);
