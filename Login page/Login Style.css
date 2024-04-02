@@ -26,7 +26,7 @@ form
     font-weight: bold;
     border: none;
     color: aliceblue;
-    background-color: rgb(160, 0, 0);
+    background-color: rgb(180, 0, 0);
     padding-top: 7px;
     padding-bottom: 6px;
     padding-left: 9px;
@@ -38,7 +38,7 @@ form
 
 #X:hover, #login:hover
 {
-    background-color: rgb(136, 0, 0);
+    background-color: rgb(153, 0, 0);
 }
 
 button:hover,#Rememberme:hover
@@ -76,18 +76,19 @@ button:hover,#Rememberme:hover
 
 h2
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: aliceblue;
 }
 
 #forget, #Register2
 {
-    color: rgb(0, 30, 255);
+    color: rgb(48, 72, 255);
     background: none;
     border: none;
 }
 #login
 {
+    font-size: 14px;
     font-weight: bold;   
     color: aliceblue;
     background-color: rgb(180, 0, 0);
@@ -99,17 +100,21 @@ h2
 }
 #p2
 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #dbdbdb;
-    font-size: 12px;
+    font-size: 11px;
 }
 #Remember
 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #dbdbdb;
-    font-size: 14px;
+    font-size: 12px;
 }
 #Rememberme
 {
     width: 11px;
+    margin-right: 0px;
+    margin-top: 5px;
 }
 
 #forget:hover, #Register2:hover
@@ -117,7 +122,7 @@ h2
     text-decoration: underline;
 } 
 
-#forget:active, #login:active, #Register2:active
+#forget:active, #login:active, #Register2:active, #Register1:active
 {
     color: aliceblue;
     text-decoration: underline;
@@ -125,4 +130,38 @@ h2
 #x:active
 {
     background-color: rgb(233, 222, 222);
+}
+
+.fa-lock
+{
+    position: fixed;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.fa-envelope
+{
+    position: fixed;
+    margin-left: 199px;
+    margin-top: 11px;
+}
+
+#Register1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dbdbdb;
+    background-color: rgb(175, 0, 0);
+    margin-left: 1150px;
+    margin-top: 30px;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#Register1:hover
+{
+    background-color: rgb(148, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(255, 53, 53, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
