@@ -1,0 +1,204 @@
+body
+{
+    background-image: url("0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+form
+{
+    background: linear-gradient(135deg, rgba(4, 1, 177, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    border: #dbdbdb solid 1px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 0 18px 3px rgba(0, 0, 0, 0.3);
+}
+
+#X
+{
+    font-weight: bold;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(180, 0, 0);
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-top: 7px;
+    margin-left: 260px;
+    border-radius: 0 7px 0 7px;
+}
+
+#X:hover, #Register:hover
+{
+    background-color: rgb(153, 0, 0);
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#email, #password2, #password, #name
+
+{
+    color: aliceblue;
+    width: 70%;
+    height: 20px;
+    background: none;
+    border-color: black;
+    border-style: double;
+    border-width: 0 0 1px 0;
+}
+::placeholder
+{
+    opacity: 50%;
+    color: aliceblue;
+    padding-left: 15px;
+}
+
+h2
+{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+#Register
+{
+    font-size: 14px;
+    font-weight: bold;   
+    color: aliceblue;
+    background-color: rgb(180, 0, 0);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+#Register:active, #login1:active
+{
+    color: aliceblue;
+    text-decoration: underline;
+} 
+#x:active
+{
+    background-color: rgb(233, 222, 222);
+}
+
+#lock2
+{
+    position: fixed;
+    margin-left: 200px;
+    margin-top: 135px;
+}
+.fa-lock
+{
+    position: fixed;
+    margin-left: 200px;
+    margin-top: 93px;
+}
+.fa-envelope
+{
+    position: fixed;
+    margin-left: 199px;
+    margin-top: 50px;
+}
+.fa-user
+{
+    position: fixed;
+    margin-left: 199px;
+    margin-top: 11px;
+}
+
+#login1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dbdbdb;
+    background-color: rgb(175, 0, 0);
+    margin-left: 90%;
+    margin-top: 30px;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#login1:hover
+{
+    background-color: rgb(148, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#Agree
+{
+    position: fixed;
+    accent-color: green;
+    margin-top: 3px;
+    margin-left: -17px;
+}
+#Agree:hover
+{
+    cursor: pointer;
+}
+#Iagree
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dbdbdb;
+    font-size: 13px;
+}
+
+#password2
+{
+    color: aliceblue;
+    width: 70%;
+    height: 20px;
+    background: none;
+    border-color: black;
+    border-style: double;
+    border-width: 0 0 1px 0;
+}
+
+#MSG
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color:#000000;
+    width: 150px;
+    margin: auto;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+
+#Already
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dbdbdb;
+    font-size: 11px;
+}
+#login2
+{
+    color: rgb(48, 72, 255);
+    background: none;
+    border: none;
+}
+#login2:hover
+{
+    text-decoration: underline;
+}
+#login2:active
+{
+    color: aliceblue;
+    text-decoration: underline;
+}
