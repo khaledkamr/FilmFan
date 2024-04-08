@@ -109,12 +109,15 @@ h2
     font-family: Arial, Helvetica, sans-serif;
     color: #dbdbdb;
     font-size: 12px;
+    margin-left: 30px;
+    margin-top: 100px;
 }
 #Rememberme
 {
-    width: 11px;
-    margin-right: 0px;
-    margin-top: 5px;
+    position: fixed;
+    accent-color: green;
+    margin-top: 3px;
+    margin-left: 15px;
 }
 
 #forget:hover, #Register2:hover
@@ -152,7 +155,7 @@ h2
     font-weight: bold;
     color: #dbdbdb;
     background-color: rgb(175, 0, 0);
-    margin-left: 1150px;
+    margin-left: 90%;
     margin-top: 30px;
     width: 110px;
     height: 35px;
