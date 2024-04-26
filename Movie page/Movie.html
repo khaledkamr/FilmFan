@@ -6,25 +6,25 @@
     <link rel="stylesheet" href="Movie Style.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Movie Page</title>
 </head>
 <body>
-  <div class ="nav">
-    <div class="searchbar">
-        <p>What do you want to watch?</p>
-    </div>
-    
-      <div class = "logo"><h1>LOGO</h1></div>
-    <ul>
-     <li><a class="active" href = "#">Home</a></li>
-     <li><a href = "#">Movies</a></li>
-     <li><a href = "#">Tv Shows</a></li>
-    </ul>
-    <div>
-    <input class="signin" type="submit" value="signin" name="signin">
-    <input class="signup" type="submit" value="signup" name="signup">
-   </div>
-  </div>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <form class="search-bar">
+            <input type="text" placeholder="Movies,Tv Shows,Stars" name="q">
+            <button type="submit"><img src="img/search.png"></button>
+
+        </form>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Tv Shows</a>
+            <input class="signin" type="submit" value="SIGN IN" name="signin">
+            <input class="signup" type="submit" value="SIGN UP" name="signup">
+        </div>
+    </header>
       
         
 
@@ -37,7 +37,9 @@
     </div>
 
     <img src="img/the-batman.jpg" alt="batman" id="bat">
-    <img src="img/trailer.jpg" alt="batman" id="trailer">
+    <video controls autoplay muted scr="img/the-batman-trailer.mp4"alt="batmantv" id="trailerv">
+        <source src ="img/the-batman-trailer.mp4">
+    </video>
 
     <div class="FFr">
         <p><b>Fan</b>Film Rating</p>
@@ -78,15 +80,16 @@
 
 <div class="hrline"></div>
 
-<p id="dirct">Director , <b id="bluen">Matt Reeves</b></p>
+<p id="dirct">Director  <b ><a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Matt Reeves</a></b></p>
 
 <div class="hrline1"></div>
 
-<p id="dirct1">Writers <b id="bluen">Matt Reeves , Peter Craig , Bob Kane</b></p>
+<p id="dirct1">Writers <b ><a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Matt Reeves</a>,<a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Peter Craig</a>,<a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Bob Kane</a></b></p>
 
 <div class="hrline2"></div>
 
-<p id="dirct2">Stars <b id="bluen">Robert Pattinson , Zoë Kravitz , Jeffrey Wright</b></p>
+
+<p id="dirct2">Stars <b ><a href = "https://www.imdb.com/name/nm1500155/?ref_=tt_ov_st">Robert Pattinson </a>,<a href = "https://www.imdb.com/name/nm2368789/?ref_=tt_ov_st">Zoë Kravitz </a>,<a href = "https://www.imdb.com/name/nm0942482/?ref_=tt_ov_st">Jeffrey Wright </a></b></p>
 
 <div class="hrline3"></div>
 
@@ -105,7 +108,45 @@
   <div class="line1"></div>
 
 
-<div class="space"><p>0</p></div>
+  <section class="movies" id="movies">
+
+    <div class="movies-container">
+        <div class="box">
+        <div class="box-img">
+            <img src="img/Batman Begins.jpg">
+        </div>
+        <h3>Batman Begins</h3>
+        <span>USA 2005</span><br>
+        <span>Action/Adventure</span>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/fightclub.jpg">
+            </div>
+            <h3>Fight club</h3>
+            <span>USA 1999</span><br>
+            <span>Thriller/Crime</span>
+            </div>
+        
+        <div class="box">
+            <div class="box-img">
+                <img src="img/shutterislandjpg.jpg">
+            </div>
+            <h3>Shutter Island</h3>
+            <span>USA 2010</span><br>
+            <span>Thriller/Mystery</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/goodfellas.jpg">
+                </div>
+                <h3>GoodFellas</h3>
+                <span>USA 1990</span><br>
+                <span>thriller/Crime</span>
+                </div>
+    </section>
+</div>
 </body>
 </html>
 

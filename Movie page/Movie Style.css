@@ -1,6 +1,4 @@
 
-
-
 body{
 margin: 0 100px;
 background-image: linear-gradient(to bottom left,  rgb(0, 0, 0) , rgb(31, 43, 87));
@@ -13,121 +11,25 @@ background-repeat: no-repeat;
 
 
 
-.nav{
-width: 100%;
-display:flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px 0;
-}
-
-.nav .searchbar{
-    /* Search */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 6px 10px;
-
-
-width: 525px;
-height: 36px;
-left: calc(50% - 525px/2 - 23.5px);
-top: 43px;
-
-background: rgba(255, 255, 255, 0.1);
-/* gray/300 */
-border: 2px solid #D1D5DB;
-border-radius: 6px;
-
-
-/* What do you want to watch? */
-
-margin: 0 auto;
-width: 211px;
-height: 24px;
-
-font-family:sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-/* white */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* Search */
-
-margin: 0 auto;
-width: 400px;
-height: 30px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* Icon */
-
-position: absolute;
-left: 36%;
-top: 33px;
-
-/* white */
-border: 2px solid #FFFFFF;
-
-
-
-}
-
-.nav .logo h1{
-    font-weight: 600;
-    font-family: sans-serif ;
-    color:rgb(255, 255, 255);
-}
-
-
-.nav ul{
-    display: flex;
-    list-style: none;
-    margin-left: 1080px;
-    margin-bottom: 36px;
-}
-
-.nav ul li{
-    margin-right: 30px;
-}
-
-.nav ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
+.header{
     font-family: sans-serif;
-    font-size: 17px;
-}
-
-
-
-
-
-/*input*/
-
-input{
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-top: 10px;
+  }
+  input{
     padding: 10px 20px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 15px;
+    
 }
 
 .signin{
@@ -135,6 +37,9 @@ input{
     border: none;
     color: #ffffff;
 margin-left: 35px;
+margin-top: 5px;
+font-weight: 550;
+font-size: 14px;
 
 
 }
@@ -146,11 +51,81 @@ margin-left: 35px;
     background-color: #FF0000;
     outline: none;
     border-radius: 5px;
-    margin-bottom: 20px;
+    font-weight: 550;
+    font-size: 13px;
 }
 
 
-/*content*/
+  
+  .logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  
+  .navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover::before{
+    width: 100%;
+  }
+  
+  .search-bar{
+    width: 35%; 
+    max-width: 400px; 
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px; 
+    backdrop-filter: blur(2px) saturate(180%);
+  }
+  
+  .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 8px; 
+    font-size: 16px; 
+    color: #ffffff;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  ::placeholder{
+    color: #cac7ff;
+  }
+  
+  .search-bar button img{
+    width: 25px;
+  }
+  
+  .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    background: #58629b;
+    cursor: pointer;
+  }
 
 
 
@@ -212,13 +187,14 @@ color: #9CA3AF;
 #bat{
     width: 292px;
     height: 453px;
-    margin-top: 250px;
-    margin-left: 50px;
+    margin-top: 350px;
+    margin-left: 30px;
 }
 
-#trailer{
-    width: 865px;
-    height: 453px;
+#trailerv{
+    width: 765px;
+    height: 474px;
+
 }
 
 .FFr {
@@ -227,7 +203,7 @@ color: #9CA3AF;
 position: absolute;
 width: 170px;
 height: 31px;
-left: 1051px;
+left: 720px;
 top: 191px;
 
 font-family: sans-serif;
@@ -248,7 +224,7 @@ color: #ffffff;
 position: absolute;
 width: 66px;
 height: 31px;
-left: 1008px;
+left: 708px;
 top: 230px;
 
 font-family: sans-serif;
@@ -265,7 +241,7 @@ color: #FFFFFF;
     position: absolute;
     width: 66px;
     height: 31px;
-    left: 1008px;
+    left: 708px;
     top: 230px;
     
     font-family: sans-serif;
@@ -281,10 +257,14 @@ div.stars {
     position: absolute;
     width: 270px;
     display: inline-block;
-    margin-left: 200px;
-    margin-top: 129px;
+    margin-left: 20px;
+    margin-top: 175px;
   }
-  input.star { display: none; }
+  input.star  { 
+    
+    display: none;
+
+}
   label.star {
     float: right;
     padding: 5px;
@@ -445,6 +425,10 @@ color: #FFFFFF;
 
 
 }
+a{
+    color: #3B63F0;
+
+}
 
 
 .hrline3{
@@ -487,7 +471,7 @@ color: #FFFFFF;
     /* 8.1K User reviews */
 
 position: absolute;
-left: 1550px;
+left: 950px;
 top: 1620px;
 
 font-family: sans-serif;
@@ -508,7 +492,7 @@ position: absolute;
 width: 288px;
 height: 27px;
 left: 70px;
-top: 1900px;
+top: 1890px;
 
 font-family:sans-serif;
 font-style: normal;
@@ -535,10 +519,59 @@ color: #D9D9D9;
     border-radius: 2px;
     }
 
-.space{
-position: absolute;
-    margin-top: 2000px;
-}
+    .movies-container{
+        max-width: 968px;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-top: 1200px;
+        margin-bottom: 60px;
+      }
+      
+      .box .box-img{
+        width: 100%;
+        height: 350px;
+      }
+      
+      .box .box-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .box .box-img img:hover{
+        transform: translateY(-10px);
+        transition: 0.25s all linear;
+      }
+      
+      .box h3{
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(236, 236, 236);
+        font-family: sans-serif;
+      }
+      
+      .box span{
+        font-size: 13px;
+        color: rgb(194, 191, 191);
+        
+      
+      
+      }
+
+
+      ::-webkit-scrollbar{
+        width: 5px;
+      }
+      ::-webkit-scrollbar-thumb{
+        border-radius: 20px;
+        background-color: #58629b;
+      }
+      
 
 
 
