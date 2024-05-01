@@ -10,7 +10,9 @@ h1{
   font-size: 90px;
   line-height: 70px;
   color: #32def1;
+ 
 }
+
 
 
 #middle{
@@ -27,87 +29,54 @@ h1{
   text-align: center;
 }
 
-#product1{
-  text-align: center;
-  background-image: url("img/darkblue.jpg");
-  width: 100;
-  height: 200vh;
-  color: #ffffff;
-  
-}
 
-#product1 i{
-  color: red;
-}
-
-#product1 .movies{
-  text-align: left;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-
-#product1 .pro{
-  width: 15%;
-  min-width: 100px;
-  padding: 10px 5px;
-  border: 1px solid #1b150e;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-  margin: 15px 0;
-  transition: 0.2s ease;
-  
-
-}
-
-#product1 .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
-}
-
-#product1 .pro img{
-  width: 100%;
-  border-radius: 5px;
-}
-
-#product1 .pro .des{
-  text-align: center;
-  padding: 10px 0;
-}
-
-#product1 .pro .des h5{
-  padding-top: 7px;
-  font-size: 15px;
-}
-
-#product1 .pro .des h4{
-  padding-top: 7px;
-  font-size: 17px;
-  font-weight: 700;
-  color: rgb(244, 153, 26);
-}
-
-#product1 .product-container{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 120px;
-  padding: 20px;
-  flex-wrap: wrap;
-  
-}
 
 .header{
+  font-family: sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: rgba(198, 199, 201, 0.096);
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  margin-top: 10px;
 }
+input{
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  
+}
+
+.signin{
+  background: transparent;
+  border: none;
+  color: #ffffff;
+margin-left: 35px;
+margin-top: 5px;
+font-weight: 550;
+font-size: 14px;
+
+
+}
+
+.signup{
+  border: none;
+  color: #ffffff;
+  margin-left: 20px;
+  background-color: #FF0000;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 550;
+  font-size: 13px;
+}
+
+
 
 .logo{
   font-size: 32px;
@@ -146,7 +115,7 @@ h1{
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 5px 10px; 
   backdrop-filter: blur(2px) saturate(180%);
 }
@@ -158,7 +127,9 @@ h1{
   outline: none;
   padding: 10px 8px; 
   font-size: 16px; 
-  color: #cac7ff;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: sans-serif;
 }
 ::placeholder{
   color: #cac7ff;
@@ -175,4 +146,78 @@ h1{
   height: 40px; 
   background: #58629b;
   cursor: pointer;
+}
+
+
+.heading{
+  
+  color: white;
+  padding-top: 60px;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  
+}
+
+.heading span{
+  border-left: 4px solid red;
+  padding-left: 5px;
+}
+
+.second{
+  background-image: linear-gradient(to bottom left,  rgb(0, 0, 0) , rgb(31, 43, 87));
+    
+  
+    padding: 20px;
+}
+
+.movies-container{
+  max-width: 968px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box .box-img{
+  width: 100%;
+  height: 270px;
+}
+
+.box .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .box-img img:hover{
+  transform: translateY(-10px);
+  transition: 0.25s all linear;
+}
+
+.box h3{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(236, 236, 236);
+}
+
+.box span{
+  font-size: 13px;
+  color: rgb(194, 191, 191);
+  
+}
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #58629b;
 }

@@ -62,6 +62,7 @@ font-size: 14px;
     color: white;
     text-decoration: none;
     font-weight: 700;
+    margin-right: 50px;
   }
   
   .navbar a{
@@ -203,7 +204,7 @@ color: #9CA3AF;
 position: absolute;
 width: 170px;
 height: 31px;
-left: 720px;
+left: 670px;
 top: 191px;
 
 font-family: sans-serif;
@@ -224,7 +225,7 @@ color: #ffffff;
 position: absolute;
 width: 66px;
 height: 31px;
-left: 708px;
+left: 628px;
 top: 230px;
 
 font-family: sans-serif;
@@ -241,7 +242,7 @@ color: #FFFFFF;
     position: absolute;
     width: 66px;
     height: 31px;
-    left: 708px;
+    left: 628px;
     top: 230px;
     
     font-family: sans-serif;
@@ -257,8 +258,8 @@ div.stars {
     position: absolute;
     width: 270px;
     display: inline-block;
-    margin-left: 20px;
     margin-top: 175px;
+    margin-right: 90px;
   }
   input.star  { 
     
@@ -565,7 +566,10 @@ color: #D9D9D9;
 
 
       ::-webkit-scrollbar{
-        width: 5px;
+        width: 9px;
+      }
+      ::-webkit-scrollbar-track{
+        background-color: rgb(0, 0, 0);
       }
       ::-webkit-scrollbar-thumb{
         border-radius: 20px;
