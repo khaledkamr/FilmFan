@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/Home style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">FilmFan</a>
+        <form class="search-bar">
+            <input type="text" placeholder="Movies,Tv Shows,Stars" name="q">
+            <button type="submit"><img src="{% static 'img/search.png' %}"></button>
+
+        </form>
+        <div class="navbar">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'movies' %}">Movies</a>
+            <a href="{% url 'TVshows' %}">Tv Shows</a>
+            <a href="{% url 'login' %}">Sign up/Log in</a>
+        </div>
+    </header>
+
+    <section id="middle">
+        <h1>Explore</h1><br><br>
+        <h1>The World Of Cinema</h1>
+    </section>
+
+    <section class="second">
+
+        <section class="movies" id="movies">
+            <h2 class="heading" ><span>Featured Movies</span></h2>
+    
+            <div class="movies-container">
+                <div class="box">
+                <div class="box-img">
+                    <img src="{% static 'img/Batman Begins.jpg' %}">
+                </div>
+                <h3>Batman Begins</h3>
+                <span>USA 2005</span><br>
+                <span>Action/Adventure</span>
+                </div>
+    
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/fightclub.jpg' %}">
+                    </div>
+                    <h3>Fight club</h3>
+                    <span>USA 1999</span><br>
+                    <span>Thriller/Crime</span>
+                    </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/shutterislandjpg.jpg' %}">
+                    </div>
+                    <h3>Shutter Island</h3>
+                    <span>USA 2010</span><br>
+                    <span>Thriller/Mystery</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="{% static 'img/goodfellas.jpg' %}">
+                        </div>
+                        <h3>GoodFellas</h3>
+                        <span>USA 1990</span><br>
+                        <span>thriller/Crime</span>
+                        </div>
+                    
+    
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="{% static 'img/fightclub.jpg' %}">
+                            </div>
+                            <h3>Usual Suspects</h3>
+                            <span>USA 1995</span><br>
+                            <span>Thriller/Crime</span>
+                            </div>
+                
+                    
+            </div>
+            <h2 class="heading"><span>Tv Shows</span></h2>
+            <div class="movies-container">
+                <div class="box">
+                <div class="box-img">
+                    <img src="{% static 'img/sopranos.jpg' %}">
+                </div>
+                <h3>The Sopranos</h3>
+                <span>USA 1999</span><br>
+                <span>Drama/Crime</span>
+                </div>
+    
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/breakingbad.jpeg' %}">
+                    </div>
+                    <h3>Breaking Bad</h3>
+                    <span>USA 2008</span><br>
+                    <span>Drama/Crime</span>
+                    </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/bettercallsaul.jpg' %}">
+                    </div>
+                    <h3>Better Call Saul</h3>
+                    <span>USA 2015</span><br>
+                    <span>Drama</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="{% static 'img/sonsofanarchy.jpg' %}">
+                        </div>
+                        <h3>Sons of Anarchy</h3>
+                        <span>USA 2008</span><br>
+                        <span>Drama/Crime</span>
+                        </div>
+                    
+    
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="{% static 'img/fightclub.jpg' %}">
+                            </div>
+                            <h3>The Office</h3>
+                            <span>USA 2005</span><br>
+                            <span>Comedy/Sitcom</span>
+                            </div>
+                
+                    
+            </div>
+    
+            <h2 class="heading"><span>New Arrivals</span></h2>
+    
+            <div class="movies-container">
+                <div class="box">
+                <div class="box-img">
+                    <img src="{% static 'img/topgun.jpg' %}">
+                </div>
+                <h3>Top Gun: Maverick</h3>
+                <span>USA 2022</span><br>
+                <span>Action/Thriller</span>
+                </div>
+    
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/johnwick.jpg' %}">
+                    </div>
+                    <h3>John Wick: Chapter 4</h3>
+                    <span>USA 2005</span><br>
+                    <span>Action/Thriler</span>
+                    </div>
+                
+                <div class="box">
+                    <div class="box-img">
+                        <img src="{% static 'img/killersoftheflowermoon.jpg' %}">
+                    </div>
+                    <h3>Killers of the Flower Moon</h3>
+                    <span>USA 2023</span><br>
+                    <span>Crime/Western</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="{% static 'img/oppenheimer.jpg' %}">
+                        </div>
+                        <h3>Oppenheimer</h3>
+                        <span>USA 2023</span><br>
+                        <span>Historical Drama</span>
+                        </div>
+                    
+    
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="{% static 'img/fightclub.jpg' %}">
+                            </div>
+                            <h3>Fast X</h3>
+                            <span>USA 2023</span><br>
+                            <span>Action</span>
+                            </div>
+                
+                    
+            </div>
+        </section>
+
+    </section>
+</body>
+</html>

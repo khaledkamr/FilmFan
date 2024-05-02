@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmFan</title>
+    <link rel="stylesheet" href="{% static 'CSS/Login Style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2376c1e70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="Register1">Register</button><br><br><br><br><br>
+    <form>
+        <button id="X">X</button>
+        <h2>Login</h2><br>
+        <p id="CodeMSG"></p><br>
+        <i class="fa-solid fa-lock fa-xs"></i>
+        <i class="fa-solid fa-envelope fa-xs"></i>
+        <input type="email" placeholder="Email" id="email"><br><br>
+        <input type="password" placeholder="Password" id="password"><br>
+        <input type="checkbox" id="Rememberme">
+        <label for="Rememberme" id="Remember">Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <button type="button" id="forget">forget password?</button><br><br><br>
+        <button type="button" id="login">Login</button>
+        <p id="p2">Don't have an account?<a id="Register2" href="{% url 'register' %}"> Register</a></p> 
+    </form>
+
+    <script src="{% static 'js/Login script.js' %}"></script>
+</body>
+</html>
