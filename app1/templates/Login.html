@@ -24,7 +24,9 @@
         <input type="checkbox" id="Rememberme">
         <label for="Rememberme" id="Remember">Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <button type="button" id="forget">forget password?</button><br><br><br>
+        <a href="{% url 'home' %}">
         <button type="button" id="login">Login</button>
+    </a>
         <p id="p2">Don't have an account?<a id="Register2" href="{% url 'register' %}"> Register</a></p> 
     </form>
 
