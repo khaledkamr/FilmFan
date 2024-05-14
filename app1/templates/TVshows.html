@@ -9,7 +9,7 @@
     </head>
 <body>
   <header class="header">
-    <a href="#" class="logo"><img src="{% static 'img/search.png' %}" alt="Logo"></a>
+    <a href="#" class="logo">FilmFan</a>
     <form class="search-bar">
         <input type="text" placeholder="Movies, Tv Shows, Stars" name="q">
         <button type="submit"><img src="{% static 'img/search.png' %}" alt="Search"></button>
@@ -19,7 +19,7 @@
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'movies' %}">Movies</a>
         <a href="{% url 'TVshows' %}">Tv Shows</a>
-        <a class="signin" href="{% url 'login' %}"><b>SIGN IN</b></a>
+        <a class="signin" href="{% url 'signin' %}"><b>SIGN IN</b></a>
         <a class="signup" href="{% url 'register' %}"><b>SIGN UP</b></a>
     </div>
 </header> 

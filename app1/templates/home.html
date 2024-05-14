@@ -21,7 +21,12 @@
             <a href="{% url 'home' %}">Home</a>
             <a href="{% url 'movies' %}">Movies</a>
             <a href="{% url 'TVshows' %}">Tv Shows</a>
-            <a href="{% url 'login' %}">Sign up/Log in</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'signin' %}">Sign out</a>
+            <h4>{{ fname}}</h4>
+            {% else %}
+            <a href="{% url 'signin' %}">Sign up/Log in</a>
+            {% endif %}
         </div>
     </header>
 

@@ -13,7 +13,8 @@
 </head>
 <body>
     <button id="login1">Login</button><br><br><br><br><br>
-    <form>
+    <form action="/register" method="post">
+    {% csrf_token %}
         <button id="X">X</button>
         <h2>Register</h2><br>
         <p id="MSG"></p>
@@ -21,19 +22,17 @@
         <i class="fa-solid fa-lock fa-xs" id="lock2"></i>
         <i class="fa-solid fa-envelope fa-xs"></i>
         <i class="fa-solid fa-user fa-xs"></i>
-        <input type="text" placeholder="Name" id="name"><br><br>
-        <input type="email" placeholder="Email" id="email"><br><br>
-        <input type="password" placeholder="Password" id="password"><br><br>
-        <input type="password" placeholder="Enter the password again" id="password2"><br><br>
+        <input type="text" name="username" placeholder="Name" id="name" required><br><br>
+        <input type="email" name="Email" placeholder="Email" id="email" required><br><br>
+        <input type="password" name="pass1" placeholder="Password" id="password" required><br><br>
+        <input type="password" name="pass2" placeholder="Enter the password again" id="password2" required><br><br>
         <input type="checkbox" id="Agree">
         <label for="Agree" id="Iagree">I agree to the terms & conditions</label>
         <br><br><br>
-     <a href="{% url 'home' %}">
-        <button type="button" id="Register">Register</button>
-    </a>
-        <p id="Already">Already have an account?<a id="login2" href="{% url 'login' %}"> Login</a></p>
+        <button type="submit" id="Register">Register</button>
+        <p id="Already">Already have an account?<a id="login2" href="{% url 'signin' %}"> Login</a></p>
     </form>
 
-    <script src="{% static 'js/Register script.js' %}"></script>
+    <!-- <script src="{% static 'js/Register script.js' %}"></script> -->
 </body>
 </html>
