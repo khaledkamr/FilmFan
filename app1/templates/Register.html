@@ -10,9 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2376c1e70.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="login1">Login</button><br><br><br><br><br>
+    <p id="logo">FilmFan
+    <a href="{% url 'signin' %}"><button id="login1">Login</button></a>
+    </p>
     <form action="/register" method="post">
     {% csrf_token %}
         <button id="X">X</button>

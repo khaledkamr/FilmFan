@@ -10,9 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2376c1e70.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="Register1">Register</button><br><br><br><br><br>
+    <p id="logo">FilmFan
+    <a href="{% url 'register' %}"><button id="Register1">Register</button></a>
+    </p><br><br>
     <form action="/signin" method="post">
     {% csrf_token %}
         <button id="X">X</button>
@@ -20,7 +25,7 @@
         <p id="CodeMSG"></p><br>
         <i class="fa-solid fa-lock fa-xs"></i>
         <i class="fa-solid fa-envelope fa-xs"></i>
-        <input type="text" name="username" placeholder="username" id="email" required><br><br> 
+        <input type="text" name="username" placeholder="User name" id="email" required><br><br> 
         <input type="password" name="pass1" placeholder="Password" id="password" required><br>
         <input type="checkbox" id="Rememberme">
         <label for="Rememberme" id="Remember">Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
