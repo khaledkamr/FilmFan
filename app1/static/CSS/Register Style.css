@@ -1,10 +1,19 @@
 body
 {
-    background-image: url(../img/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png);
+    background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+#logo
+{
+    font-family: "Freckle Face", system-ui;
+    color: #d60000;
+    margin-left: 7%;
+    margin-top: 3%;
+    font-size: 50px;
 }
 
 form
@@ -14,7 +23,7 @@ form
     -webkit-backdrop-filter: blur(10px);
     text-align: center;
     max-width: 300px;
-    margin: auto;
+    margin-left: 39%;
     padding-bottom: 50px;
     border-radius: 10px;
     border: #dbdbdb solid 1px;
@@ -125,8 +134,8 @@ h2
     font-weight: bold;
     color: #dbdbdb;
     background-color: rgb(175, 0, 0);
-    margin-left: 90%;
-    margin-top: 30px;
+    margin-left: 72%;
+    margin-top: 28px;
     width: 110px;
     height: 35px;
     border-radius: 10px;
@@ -185,7 +194,7 @@ h2
 {
     font-family: Arial, Helvetica, sans-serif;
     color: #dbdbdb;
-    font-size: 11px;
+    font-size: 12px;
 }
 #login2
 {
