@@ -8,26 +8,138 @@
     <link rel="stylesheet" href="{% static 'CSS/Home style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <style>
+        .header{
+        font-family: sans-serif;
+        top: 0;
+        left: 0;
+        width: 90%;
+        padding: 20px 50px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        margin-top: 10px;
+      }
+      input{
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 15px;      
+      }
+      .signin{
+        padding: 10px;
+        margin-right: -100px;
+        margin-left: 1px;
+        color: white;
+        border: none;
+        background-color: #FF0000;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 550;
+        font-size: 16px;
+      }
+      .signin:hover{
+        cursor: pointer;
+      }
+      .logo{
+        font-family: "Freckle Face", system-ui;
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 50px;
+        margin-right: 150px;
+      }
+      .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+      }
+      .navbar a::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+      .navbar a:hover::before{
+        width: 100%;
+      }
+      .search-bar{
+        width: 35%; 
+        max-width: 400px; 
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px 10px; 
+        backdrop-filter: blur(2px) saturate(180%);
+      }
+      .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 10px 8px; 
+        font-size: 16px; 
+        color: #ffffff;
+        font-weight: 500;
+        font-family: sans-serif;
+      }
+      ::placeholder{
+        color: #cac7ff;
+      }
+      .search-bar button img{
+        width: 20px;
+      }
+      .search-bar button{
+        border: 0;
+        border-radius: 50%;
+        width: 35px; 
+        height: 35px; 
+        background: #58629b;
+        cursor: pointer;
+      }
+
+        ::-webkit-scrollbar{
+            width: 9px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: rgb(0, 0, 0);
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 20px;
+            background-color: #58629b;
+        }
+
+    </style>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">FilmFan</a>
         <form class="search-bar">
-            <input type="text" placeholder="Movies,Tv Shows,Stars" name="q">
-            <button type="submit"><img src="{% static 'img/search.png' %}"></button>
-
+            <input type="text" placeholder="Movies, Tv Shows, Stars" name="q">
+            <button type="submit"><img src="{% static 'img/search.png' %}" alt="Search"></button>
         </form>
         <div class="navbar">
             <a href="{% url 'home' %}">Home</a>
             <a href="{% url 'movies' %}">Movies</a>
             <a href="{% url 'TVshows' %}">Tv Shows</a>
-            {% if user.is_authenticated %}
-            <a href="{% url 'signin' %}">Sign out</a>
-            <h4>{{ fname}}</h4>
-            {% else %}
-            <a href="{% url 'signin' %}">Sign up/Log in</a>
-            {% endif %}
         </div>
+        <a href="{% url 'signin' %}">
+              <button class="signin"><b>Sign in / Sign up</b></button>
+        </a>
     </header>
 
     <section id="middle">
@@ -44,48 +156,48 @@
                 <div class="box">
                 <div class="box-img">
                     <a href="{% url 'movie' %}">
-                    <img src="{% static 'img/Batman Begins.jpg' %}">
+                    <img src="{% static 'img/the-batman.jpg' %}">
                     </a>
-                </div>
-                <h3>Batman Begins</h3>
-                <span>USA 2005</span><br>
-                <span>Action/Adventure</span>
+                </div><br>
+                <h3>The Batman</h3>
+                <span>USA 2022</span><br>
+                <span>Action, Adventure</span>
                 </div>
     
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/fightclub.jpg' %}">
-                    </div>
+                    </div><br>
                     <h3>Fight club</h3>
                     <span>USA 1999</span><br>
-                    <span>Thriller/Crime</span>
+                    <span>Thriller, Crime</span>
                     </div>
                 
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/shutterislandjpg.jpg' %}">
-                    </div>
+                    </div><br>
                     <h3>Shutter Island</h3>
                     <span>USA 2010</span><br>
-                    <span>Thriller/Mystery</span>
+                    <span>Thriller, Mystery</span>
                     </div>
                     <div class="box">
                         <div class="box-img">
                             <img src="{% static 'img/goodfellas.jpg' %}">
-                        </div>
+                        </div><br>
                         <h3>GoodFellas</h3>
                         <span>USA 1990</span><br>
-                        <span>thriller/Crime</span>
+                        <span>thriller, Crime</span>
                         </div>
                     
     
                         <div class="box">
                             <div class="box-img">
                                 <img src="{% static 'img/fightclub.jpg' %}">
-                            </div>
+                            </div><br>
                             <h3>Usual Suspects</h3>
                             <span>USA 1995</span><br>
-                            <span>Thriller/Crime</span>
+                            <span>Thriller, Crime</span>
                             </div>
                 
                     
@@ -95,25 +207,25 @@
                 <div class="box">
                 <div class="box-img">
                     <img src="{% static 'img/sopranos.jpg' %}">
-                </div>
+                </div><br>
                 <h3>The Sopranos</h3>
                 <span>USA 1999</span><br>
-                <span>Drama/Crime</span>
+                <span>Drama, Crime</span>
                 </div>
     
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/breakingbad.jpeg' %}">
-                    </div>
+                    </div><br>
                     <h3>Breaking Bad</h3>
                     <span>USA 2008</span><br>
-                    <span>Drama/Crime</span>
+                    <span>Drama, Crime</span>
                     </div>
                 
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/bettercallsaul.jpg' %}">
-                    </div>
+                    </div><br>
                     <h3>Better Call Saul</h3>
                     <span>USA 2015</span><br>
                     <span>Drama</span>
@@ -121,20 +233,20 @@
                     <div class="box">
                         <div class="box-img">
                             <img src="{% static 'img/sonsofanarchy.jpg' %}">
-                        </div>
+                        </div><br>
                         <h3>Sons of Anarchy</h3>
                         <span>USA 2008</span><br>
-                        <span>Drama/Crime</span>
+                        <span>Drama, Crime</span>
                         </div>
                     
     
                         <div class="box">
                             <div class="box-img">
                                 <img src="{% static 'img/fightclub.jpg' %}">
-                            </div>
+                            </div><br>
                             <h3>The Office</h3>
                             <span>USA 2005</span><br>
-                            <span>Comedy/Sitcom</span>
+                            <span>Comedy, Sitcom</span>
                             </div>
                 
                     
@@ -146,43 +258,43 @@
                 <div class="box">
                 <div class="box-img">
                     <img src="{% static 'img/topgun.jpg' %}">
-                </div>
+                </div><br>
                 <h3>Top Gun: Maverick</h3>
                 <span>USA 2022</span><br>
-                <span>Action/Thriller</span>
+                <span>Action, Thriller</span>
                 </div>
     
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/johnwick.jpg' %}">
-                    </div>
+                    </div><br>
                     <h3>John Wick: Chapter 4</h3>
                     <span>USA 2005</span><br>
-                    <span>Action/Thriler</span>
+                    <span>Action, Thriler</span>
                     </div>
                 
                 <div class="box">
                     <div class="box-img">
                         <img src="{% static 'img/killersoftheflowermoon.jpg' %}">
-                    </div>
+                    </div><br>
                     <h3>Killers of the Flower Moon</h3>
                     <span>USA 2023</span><br>
-                    <span>Crime/Western</span>
+                    <span>Crime, Western</span>
                     </div>
                     <div class="box">
                         <div class="box-img">
                             <img src="{% static 'img/oppenheimer.jpg' %}">
-                        </div>
+                        </div><br>
                         <h3>Oppenheimer</h3>
                         <span>USA 2023</span><br>
-                        <span>Historical Drama</span>
+                        <span>Historical, Drama</span>
                         </div>
                     
     
                         <div class="box">
                             <div class="box-img">
                                 <img src="{% static 'img/fightclub.jpg' %}">
-                            </div>
+                            </div><br>
                             <h3>Fast X</h3>
                             <span>USA 2023</span><br>
                             <span>Action</span>

@@ -9,23 +9,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Movie Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <style>
+      .header{
+        font-family: sans-serif;
+        top: 0;
+        left: 0;
+        width: 90%;
+        padding: 20px 100px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        margin-top: 10px;
+      }
+      input{
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 15px;      
+      }
+      .signin{
+        padding: 10px;
+        margin-right: -40px;
+        margin-left: 1px;
+        color: white;
+        border: none;
+        background-color: #FF0000;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 550;
+        font-size: 16px;
+      }
+      .signin:hover{
+        cursor: pointer;
+      }
+      .logo{
+        font-family: "Freckle Face", system-ui;
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: -100px;
+        margin-right: 100px;
+      }
+      .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+      }
+      .navbar a::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+      .navbar a:hover::before{
+        width: 100%;
+      }
+      .search-bar{
+        width: 35%; 
+        max-width: 400px; 
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px 10px; 
+        backdrop-filter: blur(2px) saturate(180%);
+      }
+      .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 10px 8px; 
+        font-size: 16px; 
+        color: #ffffff;
+        font-weight: 500;
+        font-family: sans-serif;
+      }
+      ::placeholder{
+        color: #cac7ff;
+      }
+      .search-bar button img{
+        width: 20px;
+      }
+      .search-bar button{
+        border: 0;
+        border-radius: 50%;
+        width: 35px; 
+        height: 35px; 
+        background: #58629b;
+        cursor: pointer;
+      }
+    </style>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo">FilmFan</a>
         <form class="search-bar">
-            <input type="text" placeholder="Movies,Tv Shows,Stars" name="q">
-            <button type="submit"><img src="{% static 'img/search.png' %}"></button>
-
+            <input type="text" placeholder="Movies, Tv Shows, Stars" name="q">
+            <button type="submit"><img src="{% static 'img/search.png' %}" alt="Search"></button>
         </form>
         <div class="navbar">
             <a href="{% url 'home' %}">Home</a>
             <a href="{% url 'movies' %}">Movies</a>
             <a href="{% url 'TVshows' %}">Tv Shows</a>
-            <input class="signin" type="submit" value="SIGN IN" name="signin">
-            <input class="signup" type="submit" value="SIGN UP" name="signup">
         </div>
-    </header>
+        <a href="{% url 'signin' %}">
+              <button class="signin"><b>Sign in / Sign up</b></button>
+        </a>
+    </header> 
       
         
 
@@ -33,7 +137,7 @@
 
        <h2>The Batman</h2>  
 
-       <p>Action/adventure</p>  
+       <p>Action, adventure</p>  
 
     </div>
 
@@ -85,12 +189,12 @@
 
 <div class="hrline1"></div>
 
-<p id="dirct1">Writers <b ><a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Matt Reeves</a>,<a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Peter Craig</a>,<a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Bob Kane</a></b></p>
+<p id="dirct1">Writers <b ><a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Matt Reeves</a>, <a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Peter Craig</a>, <a href = "https://www.imdb.com/name/nm0716257/?ref_=tt_ov_dr">Bob Kane</a></b></p>
 
 <div class="hrline2"></div>
 
 
-<p id="dirct2">Stars <b ><a href = "https://www.imdb.com/name/nm1500155/?ref_=tt_ov_st">Robert Pattinson </a>,<a href = "https://www.imdb.com/name/nm2368789/?ref_=tt_ov_st">Zoë Kravitz </a>,<a href = "https://www.imdb.com/name/nm0942482/?ref_=tt_ov_st">Jeffrey Wright </a></b></p>
+<p id="dirct2">Stars <b ><a href = "https://www.imdb.com/name/nm1500155/?ref_=tt_ov_st">Robert Pattinson </a>, <a href = "https://www.imdb.com/name/nm2368789/?ref_=tt_ov_st">Zoë Kravitz </a>, <a href = "https://www.imdb.com/name/nm0942482/?ref_=tt_ov_st">Jeffrey Wright </a></b></p>
 
 <div class="hrline3"></div>
 

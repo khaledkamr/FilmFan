@@ -171,3 +171,14 @@ h1{
   color: rgb(194, 191, 191);
   
 }
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #58629b;
+}
