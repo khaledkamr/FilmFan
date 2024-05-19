@@ -10,6 +10,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
         <style>
+            .movies {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              margin-left: 50px;
+            }
+            .movie {
+              width: calc(25% - 20px); /* Adjust width to fit 4 movies in a row */
+              margin-bottom: 20px;
+              margin-left: 20px;
+              box-sizing: border-box; /* Ensure padding and border are included in the width */
+            }
+            .movie img {
+              max-width: 60%;
+            }
+            .details {
+              color: #ffffff;
+              text-align: left;
+              font-size: 15px;
+            }
           .header{
             font-family: sans-serif;
             top: 0;
@@ -140,14 +160,15 @@
       <div class="movie">
         <img src="{% static 'img/breakingbad.jpeg' %}" alt="Movie 1">
         <div class="details">
+          <h3>9.5⭐</h3>
           <h2>Breaking bad</h2>
-
           <p>Action, Thriller</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/R (7).jfif' %}" alt="Movie 2">
         <div class="details">
+          <h3>9.2⭐</h3>
           <h2>game of thrones</h2>
           <p>Action ,Thriller</p>
         </div>
@@ -155,20 +176,23 @@
       <div class="movie">
         <img src="{% static 'img/R (8).jfif' %}" alt="Movie 3">
         <div class="details">
-          <h2> The boys</h2>
+          <h3>8.7⭐</h3>
+          <h2>The boys</h2>
           <p>Action</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/R (9).jfif' %}" alt="Movie 4">
         <div class="details">
-          <h2>Kaleiderscope ||</h2>
+          <h3>6.6⭐</h3>
+          <h2>Kaleiderscope</h2>
           <p>Mystery</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/R (10).jfif' %}" alt="Movie 5">
         <div class="details">
+          <h3>7.6⭐</h3>
           <h2>The 100</h2>
           <p>Mystery , Drama</p>
         </div>
@@ -176,13 +200,15 @@
       <div class="movie">
         <img src="{% static 'img/R (11).jfif' %}" alt="Movie 6">
         <div class="details">
-          <h2>House of the dragon</h2>
+          <h3>8.4⭐</h3>
+          <h2>House of the <br>dragon</h2>
           <p>Action , Mystery</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/R (12).jfif' %}" alt="Movie 7">
         <div class="details">
+          <h3>9.7⭐</h3>
           <h2>Better call saul</h2>
           <p>Comedy, Action</p>
         </div>
@@ -190,6 +216,7 @@
       <div class="movie">
         <img src="{% static 'img/m4UY3phABl58QO4MBLk42HNr5b3.jpg' %}" alt="Movie 8">
         <div class="details">
+          <h3>8.5⭐</h3>
           <h2>vikings</h2>
           <p>Action, Thriller</p>
         </div>
@@ -197,6 +224,7 @@
       <div class="movie">
         <img src="{% static 'img/R (13).jfif' %}" alt="Movie 9">
         <div class="details">
+          <h3>4.9⭐</h3>
           <h2>The witcher</h2>
           <p>Action, Thriller</p>
         </div>
@@ -204,6 +232,7 @@
       <div class="movie">
         <img src="{% static 'img/R (14).jfif' %}" alt="Movie 10">
         <div class="details">
+          <h3>7.2⭐</h3>
           <h2>Stranger things</h2>
           <p>Action ,Mystery</p>
         </div>
@@ -211,6 +240,7 @@
       <div class="movie">
         <img src="{% static 'img/R (16).jfif' %}" alt="Movie 11">
         <div class="details">
+          <h3>8.1⭐</h3>
           <h2>wednesday</h2>
           <p>Action, Horror</p>
         </div>
@@ -218,6 +248,7 @@
       <div class="movie">
         <img src="{% static 'img/ES-ES_Localised_LCDP_S5_Main_Vertical_RGB_PRE20210730-4607-1anz6ou.webp' %}" alt="Movie 12">
         <div class="details">
+          <h3>8.2⭐</h3>
           <h2>la casa de papel</h2>
           <p>Action, </p>
         </div>
@@ -225,13 +256,15 @@
       <div class="movie">
         <img src="{% static 'img/il_1140xN.3166750471_lg3i.jpg' %}" alt="Movie 13">
         <div class="details">
-          <h2>Punisher</h2>
+          <h3>8.4⭐</h3>
+          <h2>The Punisher</h2>
           <p>Action, Thriller</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/R (17).jfif' %}" alt="Movie 14">
         <div class="details">
+          <h3>8.8⭐</h3>
           <h2>Peaky blinders</h2>
           <p>Action</p>
         </div>
@@ -239,13 +272,15 @@
       <div class="movie">
         <img src="{% static 'img/R (18).jfif' %}" alt="Movie 15">
         <div class="details">
+          <h3>5.6⭐</h3>
           <h2>Dahmer</h2>
-          <p>Action, Mystery</p>
+          <p>Horror, Mystery</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/sblr1kd5ydp61.webp' %}" alt="Movie 16">
         <div class="details">
+          <h3>8⭐</h3>
           <h2>Invincible</h2>
           <p>Action, Thriller</p>
         </div>

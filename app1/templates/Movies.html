@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
     <style>
+      .movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 50px;
+      }
       .header{
         font-family: sans-serif;
         top: 0;
@@ -138,22 +144,27 @@
   <main>
     <div class="movies">
       <div class="movie">
-        <img src="{% static 'img/Batman Begins.jpg' %}" alt="Movie 1">
+        <a href="{% url 'movie' %}">
+          <img src="{% static 'img/the-batman.jpg' %}" alt="the batman">
+          </a>
         <div class="details">
-          <h2>Batman Begins</h2>
+          <h3>7.8⭐</h3>
+          <h2>The Batman</h2>
           <p>Action, Thriller</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/vOpV6HrtAkNQxCWAgtU4NmQ1KPe.jpg' %}" alt="Movie 2">
         <div class="details">
-          <h2>spider man into the spider verse</h2>
+          <h3>8.4⭐</h3>
+          <h2>Spider man into <br>the spider verse</h2>
           <p>Action</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/OIP (2).jfif' %}" alt="Movie 3">
         <div class="details">
+          <h3>7.1⭐</h3>
           <h2>Dunkirk</h2>
           <p>Action, Thriller</p>
         </div>
@@ -161,13 +172,15 @@
       <div class="movie">
         <img src="{% static 'img/R (1).jfif' %}" alt="Movie 4">
         <div class="details">
-          <h2>The nun ||</h2>
+          <h3>5.6⭐</h3>
+          <h2>The Nun ||</h2>
           <p>Horror ,Mystery</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/army-of-the-dead-540x800.webp' %}" alt="Movie 5">
         <div class="details">
+          <h3>5.8⭐</h3>
           <h2>Army of the dead</h2>
           <p>Action, Horror</p>
         </div>
@@ -175,13 +188,15 @@
       <div class="movie">
         <img src="{% static 'img/OIP.jfif' %}" alt="Movie 6">
         <div class="details">
-          <h2>saw x</h2>
+          <h3>6.6⭐</h3>
+          <h2>Saw x</h2>
           <p>Horror ,Mystery</p>
         </div>
       </div>
       <div class="movie">
         <img src="{% static 'img/American_Psycho_Poster-1200x1797.jpg' %}" alt="Movie 7">
         <div class="details">
+          <h3>7.6⭐</h3>
           <h2>American psycho</h2>
           <p>Comedy, Horror</p>
         </div>
@@ -189,6 +204,7 @@
       <div class="movie">
         <img src="{% static 'img/dune.jpg' %}" alt="Movie 8">
         <div class="details">
+          <h3>8⭐</h3>
           <h2>Dune</h2>
           <p>Action, Thriller</p>
         </div>
@@ -196,6 +212,7 @@
       <div class="movie">
         <img src="{% static 'img/NoTimeToDie_02_Poster-1200x1779.jpg' %}" alt="Movie 9">
         <div class="details">
+          <h3>7.3⭐</h3>
           <h2>No time to die</h2>
           <p>Action, Thriller</p>
         </div>
@@ -203,6 +220,7 @@
       <div class="movie">
         <img src="{% static 'img/shangchi_and_the_legend_of_the_ten_rings_ver9_xlg.avif' %}" alt="Movie 10">
         <div class="details">
+          <h3>7.4⭐</h3>
           <h2>Shang chi</h2>
           <p>Action</p>
         </div>
@@ -210,6 +228,7 @@
       <div class="movie">
         <img src="{% static 'img/OIP (1).jfif' %}" alt="Movie 11">
         <div class="details">
+          <h3>6⭐</h3>
           <h2>Don't breathe 2</h2>
           <p>Action, Horror</p>
         </div>
@@ -217,6 +236,7 @@
       <div class="movie">
         <img src="{% static 'img/R (3).jfif' %}" alt="Movie 12">
         <div class="details">
+          <h3>6.6⭐</h3>
           <h2>Venom</h2>
           <p>Action, </p>
         </div>
@@ -224,6 +244,7 @@
       <div class="movie">
         <img src="{% static 'img/Inception-movie-poster.webp' %}" alt="Movie 13">
         <div class="details">
+          <h3>8.8⭐</h3>
           <h2>Inception</h2>
           <p>Action, Thriller</p>
         </div>
@@ -231,6 +252,7 @@
       <div class="movie">
         <img src="{% static 'img/R (6).jfif' %}" alt="Movie 14">
         <div class="details">
+          <h3>7.4⭐</h3>
           <h2>John wick 3</h2>
           <p>Action</p>
         </div>
@@ -238,13 +260,15 @@
       <div class="movie">
         <img src="{% static 'img/The_Killer_2023_poster.jpg' %}" alt="Movie 15">
         <div class="details">
+          <h3>6.7⭐</h3>
           <h2>The killer</h2>
           <p>Action, Mystery</p>
         </div>
       </div>
       <div class="movie">
-        <img src="{% static 'img/The_Killer_2023_poster.jpg' %}" alt="Movie 16">
+        <img src="{% static 'img/Theoutfit.jpg' %}" alt="Movie 16">
         <div class="details">
+          <h3>7.2⭐</h3>
           <h2>The outfit</h2>
           <p>Action, Thriller</p>
         </div>
