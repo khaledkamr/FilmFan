@@ -140,45 +140,35 @@ font-size: 14px;
 
 
 .Film h2{
-        /* The Batman */
-
+ /* The Batman */
 position: absolute;
 width: 370px;
 height: 48px;
 left: 150px;
 top: 185px;
-
 font-family:sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 64px;
 line-height: 24px;
 /* or 38% */
-
 color: #ffffff;
-
-
 }
 
 .Film p{
-    /* Action, Adventure */
-
+  /* Action, Adventure */
 position: absolute;
 width: 110px;
 height: 25px;
 left: 524px;
 top: 248px;
-
 font-family:sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
 line-height: 16px;
-
 /* gray/400 */
 color: #9CA3AF;
-
-
 }
 
 #bat{
