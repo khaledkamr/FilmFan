@@ -41,7 +41,7 @@ def signin(request):
 def signout(request):
     logout(request)
     messages.success(request, "Logged out successfully")
-    return redirect('home') 
+    return redirect('signin') 
 
 def movie(request):
     return render(request, 'movie.html')
