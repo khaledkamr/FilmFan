@@ -9,4 +9,5 @@ urlpatterns = [
     path('movies', views.movies, name='movies'),
     path('register', views.register, name='register'),
     path('TVshows', views.TVshows, name='TVshows'),
+    path('signout', views.signout, name="signout"),
 ]

@@ -143,9 +143,15 @@
         <a href="{% url 'movies' %}">Movies</a>
         <a href="{% url 'TVshows' %}">Tv Shows</a>
     </div>
-    <a href="{% url 'signin' %}">
-          <button class="signin"><b>Sign in / Sign up</b></button>
+    {% if user.is_authenticated %}
+    <a href="/signout">
+        <button class="signin"><b>Sign out</b></button>
     </a>
+    {% else %}
+    <a href="/signin">
+        <button class="signin"><b>Sign in / Sign up</b></button>
+    </a>
+    {% endif %}
 </header> 
  
 <div class="categories">
