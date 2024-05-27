@@ -1,7 +1,5 @@
 # FilmFan
 
-FilmFan is a full-stack web application for discovering, rating, and reviewing movies and TV shows. Built with Django, it provides a comprehensive platform for cinephiles to explore featured films, stay updated with entertainment news, and engage with a community of fellow enthusiasts.
-
 FilmFan is a full-stack web application designed for movie and TV show enthusiasts to discover, rate, and review their favorite films and series. Inspired by platforms like IMDb, FilmFan aims to provide users with an engaging and interactive experience where they can explore featured movies, view new arrivals, stay updated with the latest news in the entertainment industry, and contribute their own ratings and reviews.
 
 ## Features
