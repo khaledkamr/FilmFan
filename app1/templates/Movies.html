@@ -115,6 +115,39 @@
         background: #58629b;
         cursor: pointer;
       }
+
+      .categories{
+        display: flex;
+        justify-content: left;
+        list-style: none;
+        padding: 0;
+      }
+      .categories li{
+        cursor: pointer;
+        position: relative;
+        font-size: 40px;
+        color: #ffffff;
+        margin: 1px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 40px;
+      }
+      .categories li::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: rgb(244, 0, 0);
+        transition: 0.3s;
+      }
+      .categories li:hover::before{
+        width: 100%;
+      }
+      .categories .active::before{
+        width: 100%
+      }
     </style>
 </head>
 <body>
@@ -141,15 +174,19 @@
 </header> 
  
 <div class="categories">
-    <a href="file:///D:/Movies%20(4).html#">All movies</a>
+  <li class="active" data-cat=".all">All Movies</li>
+  <li data-cat=".horror">Horror</li>
+  <li data-cat=".mystery">Mystery</li>
+  <li data-cat=".action">Action</li>
+    <!-- <a href="file:///D:/Movies%20(4).html#">All movies</a>
     <a href="file:///D:/Movies%20(4).html#">Horror</a>
     <a href="file:///D:/Movies%20(4).html#">Mystery</a>
-    <a href="file:///D:/Movies%20(4).html#">Action</a>
+    <a href="file:///D:/Movies%20(4).html#">Action</a> -->
 </div>
 
   <main>
     <div class="movies">
-      <div class="movie">
+      <div class="movie all action">
         <a href="{% url 'movie' %}">
           <img src="{% static 'img/the-batman.jpg' %}" alt="the batman">
           </a>
@@ -159,7 +196,7 @@
           <p>Action, Thriller</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/vOpV6HrtAkNQxCWAgtU4NmQ1KPe.jpg' %}" alt="Movie 2">
         <div class="details">
           <h3>8.4⭐</h3>
@@ -167,7 +204,7 @@
           <p>Action</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/OIP (2).jfif' %}" alt="Movie 3">
         <div class="details">
           <h3>7.1⭐</h3>
@@ -175,7 +212,7 @@
           <p>Action, Thriller</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all horror mystery">
         <img src="{% static 'img/R (1).jfif' %}" alt="Movie 4">
         <div class="details">
           <h3>5.6⭐</h3>
@@ -183,7 +220,7 @@
           <p>Horror ,Mystery</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action horror">
         <img src="{% static 'img/army-of-the-dead-540x800.webp' %}" alt="Movie 5">
         <div class="details">
           <h3>5.8⭐</h3>
@@ -191,7 +228,7 @@
           <p>Action, Horror</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all horror mystery">
         <img src="{% static 'img/OIP.jfif' %}" alt="Movie 6">
         <div class="details">
           <h3>6.6⭐</h3>
@@ -199,7 +236,7 @@
           <p>Horror ,Mystery</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all horror">
         <img src="{% static 'img/American_Psycho_Poster-1200x1797.jpg' %}" alt="Movie 7">
         <div class="details">
           <h3>7.6⭐</h3>
@@ -207,7 +244,7 @@
           <p>Comedy, Horror</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/dune.jpg' %}" alt="Movie 8">
         <div class="details">
           <h3>8⭐</h3>
@@ -215,7 +252,7 @@
           <p>Action, Thriller</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/NoTimeToDie_02_Poster-1200x1779.jpg' %}" alt="Movie 9">
         <div class="details">
           <h3>7.3⭐</h3>
@@ -223,7 +260,7 @@
           <p>Action, Thriller</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/shangchi_and_the_legend_of_the_ten_rings_ver9_xlg.avif' %}" alt="Movie 10">
         <div class="details">
           <h3>7.4⭐</h3>
@@ -231,7 +268,7 @@
           <p>Action</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action horror">
         <img src="{% static 'img/OIP (1).jfif' %}" alt="Movie 11">
         <div class="details">
           <h3>6⭐</h3>
@@ -239,15 +276,15 @@
           <p>Action, Horror</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/R (3).jfif' %}" alt="Movie 12">
         <div class="details">
           <h3>6.6⭐</h3>
           <h2>Venom</h2>
-          <p>Action, </p>
+          <p>Action, Adventure</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/Inception-movie-poster.webp' %}" alt="Movie 13">
         <div class="details">
           <h3>8.8⭐</h3>
@@ -255,7 +292,7 @@
           <p>Action, Thriller</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/R (6).jfif' %}" alt="Movie 14">
         <div class="details">
           <h3>7.4⭐</h3>
@@ -263,7 +300,7 @@
           <p>Action</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action mystery">
         <img src="{% static 'img/The_Killer_2023_poster.jpg' %}" alt="Movie 15">
         <div class="details">
           <h3>6.7⭐</h3>
@@ -271,7 +308,7 @@
           <p>Action, Mystery</p>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie all action">
         <img src="{% static 'img/Theoutfit.jpg' %}" alt="Movie 16">
         <div class="details">
           <h3>7.2⭐</h3>
@@ -282,5 +319,5 @@
     </div>
   </main>
 
-
+  <script src="{% static 'js/Movies script.js' %}"></script>
 </body></html>
