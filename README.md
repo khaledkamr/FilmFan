@@ -45,7 +45,8 @@ FilmFan is a full-stack web application designed for movie and TV show enthusias
 2. **Create a virtual environment and activate it:**
    ```bash
    pip install virtualenv
-   source venv/Scripts/activate
+   virtualenv venv
+   venv/Scripts/activate
    ```
 
 3. **Install Django:**
