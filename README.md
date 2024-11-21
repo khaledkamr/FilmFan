@@ -10,7 +10,6 @@ FilmFan is a full-stack web application designed for movie and TV show enthusias
 - **TV Shows Page**: Displays all the TV shows in the server.
 - **New Arrivals**: Displays the latest movies and TV shows added to the platform.
 - **News Section**: Provides the latest news and updates about movies, TV shows, and the entertainment industry.
-- **Search Functionality**: Allows users to search for specific movies, TV shows, actors, writers, and more.
 - **Sign up/ Sign in**: user can create his own account on the website and can login with it any time.
 
 ### Movie/TV Show Details
